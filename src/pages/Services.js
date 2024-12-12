@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Services = () => {
-    return <h1>Nos services</h1>;
-};
+    return (
+    <div>
+    <h1>Mon offre de services</h1>
+    <p>Voici les prestations sur lesquelles je peux intervenir</p>
+    </div>
+)};
 
 export default Services;

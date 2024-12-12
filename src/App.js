@@ -7,12 +7,13 @@ import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Mentions" element={<Mentions />} />
