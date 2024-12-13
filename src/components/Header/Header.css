@@ -1,0 +1,23 @@
+
+.logo {
+  color: white;
+  padding: 10px 10px 0px 30px;
+  font-size: 1.5rem;
+  
+}
+ul {
+  display: flex;
+  gap: 20px;
+  padding: 10px 50px 0px;
+}
+
+.elementList {
+  font-size: 1.2rem;
+ text-decoration: none;
+ color: white;
+ text-transform: uppercase;
+}
+.elementList:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
