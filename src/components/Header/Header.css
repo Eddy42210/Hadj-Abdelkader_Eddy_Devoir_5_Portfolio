@@ -1,8 +1,8 @@
 
 .logo {
   color: white;
-  padding: 10px 10px 0px 30px;
   font-size: 1.5rem;
+  margin: 20px 5px 20px 40px;
   
 }
 ul {
@@ -18,6 +18,10 @@ ul {
  text-transform: uppercase;
 }
 .elementList:hover {
-  font-weight: bold;
+
   text-decoration: underline;
+}
+.active {
+  text-decoration: underline;
+  font-weight: bold ;
 }

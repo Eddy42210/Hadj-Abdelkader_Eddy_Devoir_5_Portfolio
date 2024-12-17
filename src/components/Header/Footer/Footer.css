@@ -1,0 +1,44 @@
+.icon {
+    color: gray;
+    margin: 5px; 
+    font-size: x-large;
+   
+}
+  .icon:hover {
+    color: lightgray; 
+  }
+
+.reseaux {
+  margin-top: 15px;
+}
+
+.title1 , .title2 {
+  color: white;
+  text-align: start;
+ }
+ a {
+  text-decoration: none;
+  color: white;
+ }
+
+.profil , .listes {
+  display: flex;
+  flex-direction: column;
+  
+} 
+.profil {
+  padding-left: 250px;
+  line-height: 25px;
+  text-align: start;
+}
+.realisations {
+  padding-right: 150px;
+}
+.listes {
+  line-height: 5px;
+  text-align: start;
+}
+.title2 {
+  padding-left: 50px;
+  
+}

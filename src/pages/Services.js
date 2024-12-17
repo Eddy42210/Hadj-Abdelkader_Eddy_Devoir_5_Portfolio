@@ -1,11 +1,21 @@
 import React from 'react';
+import './Services.css';
+import '../App.css';
 
-const Services = () => {
+
+function Services() {
     return (
-    <div>
-    <h1>Mon offre de services</h1>
+     <main>
+        <div className='banner'>
+        </div>
+     
+    <div className='service'>
+            <h1>Mon offre de services</h1>
     <p>Voici les prestations sur lesquelles je peux intervenir</p>
     </div>
+    
+    
+    </main>
 )};
 
 export default Services;
