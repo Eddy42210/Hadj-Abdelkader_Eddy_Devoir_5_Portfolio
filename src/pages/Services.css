@@ -5,19 +5,21 @@
     background-position: center;
     height: 40vh;
 }
-.service {
+.page {
     text-align: center;
-
     border-bottom: 5px solid rgb(0, 102, 255);
     margin: 20px 700px;
 }
-.offre {
+.descriptif {
     margin-left: 50px;
 }
+
 .cards i {
     color: rgb(0, 102, 255);
     font-size: 2rem;
-    
+}
+.card-body {
+  margin: 15px 0px;
 }
 
 .card:hover {
@@ -30,9 +32,11 @@
   }
   .card-body2 {
     padding-bottom:104px ;
+    margin-top:30px ;
   }
   .card-body3{
     padding-bottom: 80px;
+    margin-top:30px ;
   }
  .card-title {
     margin: 50px;
