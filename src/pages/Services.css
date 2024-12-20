@@ -7,4 +7,33 @@
 }
 .service {
     text-align: center;
+
+    border-bottom: 5px solid rgb(0, 102, 255);
+    margin: 20px 700px;
 }
+.offre {
+    margin-left: 50px;
+}
+.cards i {
+    color: rgb(0, 102, 255);
+    font-size: 2rem;
+    
+}
+
+.card:hover {
+    background-color: #efefef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-body p , .card-body2 p , .card-body3 p{
+    margin-left: 30px;
+  }
+  .card-body2 {
+    padding-bottom:104px ;
+  }
+  .card-body3{
+    padding-bottom: 80px;
+  }
+ .card-title {
+    margin: 50px;
+ }
