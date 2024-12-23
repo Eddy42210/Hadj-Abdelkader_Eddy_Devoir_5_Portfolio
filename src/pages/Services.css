@@ -7,7 +7,6 @@
 }
 .page {
     text-align: center;
-    border-bottom: 5px solid rgb(0, 102, 255);
     margin: 20px 700px;
 }
 .descriptif {
@@ -40,4 +39,9 @@
   }
  .card-title {
     margin: 50px;
+ }
+
+ .separate3 {
+  width: 25%;
+  margin: auto;
  }

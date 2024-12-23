@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 import './Portfolio.css';
+import Trait from '../components/Trait';
 import FreshFoodImage from "../images/portfolio/fresh-food.jpg";
 import RestaurantImage from "../images/portfolio/restaurant-japonais.jpg";
 import BienEtreImage from "../images/portfolio/espace-bien-etre.jpg";
@@ -38,6 +39,8 @@ const Portfolio = () => {
                 <h1>Portfolio</h1>
                 <p className='descriptif'>Voici quelques-unes de mes réalisations</p>
             </div>
+            <div className='separate3'><Trait /></div>
+
             <div className='articles'>
                 <div className='ensemble'>
                     <article>

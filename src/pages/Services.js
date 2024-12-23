@@ -1,6 +1,7 @@
 import React from 'react';
 import './Services.css';
 import '../App.css';
+import Trait from '../components/Trait';
 
 
 function Services() {
@@ -13,6 +14,8 @@ function Services() {
             <h1 >Mon offre de services</h1>
     <p className='descriptif'>Voici les prestations sur lesquelles je peux intervenir</p>
     </div>
+    <div className='separate3'><Trait /></div>
+
     <div className='cards'>
     <div className="container mt-5">
       <div className="row justify-content-center">

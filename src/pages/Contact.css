@@ -1,0 +1,36 @@
+.separate4 {
+    width: 40%;
+    margin: auto;
+}
+.formulaire {
+    display: flex;
+    width: 50%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin: 20px;
+    text-align: start;
+}
+.contactez-moi {
+    background-color:#ffff;
+    display: flex;
+    width:70%;
+    margin: 50px 250px ;
+    border: 1px solid none;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #bbbbbb;
+
+}
+input , textarea {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+.coordonees {
+        display: flex;
+        flex-direction: column; 
+         padding: 30px;
+         text-align: start;
+}

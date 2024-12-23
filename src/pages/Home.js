@@ -3,6 +3,7 @@ import './Home.css';
 import Portal from '../components/Portal'
 import johnDoe from '../images/john-doe-about.jpg'
 import '../App.css';
+import Trait from '../components/Trait';
 
 
 const Home = () => {
@@ -18,7 +19,7 @@ const Home = () => {
                 <div className='description'>
                     <div className='apropos'>
                         <h2>A propos</h2>
-
+                    <div className='separate'><Trait /></div>
                         <img className='about' src={johnDoe} alt='à propos de John Doe'></img>
 
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -48,6 +49,7 @@ const Home = () => {
                     </div>
                     <div className='competences'>
                         <h2>Mes Compétences</h2>
+                        <div className='separate2'><Trait /></div>
 
 
                         
