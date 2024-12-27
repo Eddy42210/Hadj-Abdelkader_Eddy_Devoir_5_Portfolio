@@ -1,0 +1,13 @@
+.accordion {
+   margin: 5% auto;
+    width: 50%;
+}
+.accordion-body {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+.accordion-body a {
+    text-decoration:underline;
+    color: blue;
+}

@@ -21,7 +21,7 @@ ul {
 
   text-decoration: underline;
 }
-.active {
+.elementList.active {
   text-decoration: underline;
   font-weight: bold ;
 }
