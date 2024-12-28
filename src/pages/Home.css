@@ -1,5 +1,3 @@
-
-
 main {
     background-color: #fdfdfd;
 } 
@@ -84,4 +82,67 @@ p {
 .separate2 {
     margin-bottom: 30px;
     width: 120%;
+}
+.modal-style {
+        
+        border: 1px solid #808080;
+        background-color: rgb(22, 22, 22);
+        border-radius: 10px;
+        height: 60%;
+        width: 60%;
+        margin: auto;
+        margin-top: 10%;
+        color: #ffff;
+
+}
+.header-modal {
+    display: flex;
+    padding: 15px 0px 0px 15px;
+    border-bottom: 1px solid #808080;
+    height: 15%;
+    margin-bottom: 10px;
+}
+.X {
+    color:#808080;
+    cursor: pointer;
+    font-size:x-large;
+    margin-left: 73%;
+     
+}
+.body-modal {
+    height: 70%;
+    display: flex;
+    gap: 20%;;
+}
+.anonym{
+    background-image: url('../images/anonym.png');
+    background-size: cover;
+    height: 90%;
+    width: 40%;
+    margin-left: 1%;
+    
+
+}
+.footer-modal{
+    border-top: 1px solid #808080;
+    
+}
+.fermer {
+    color: #ffff;
+    background-color: #808080;
+    border-radius: 10px;
+    font-size: larger;
+    margin-top: 1%;
+    margin-left: 90%;
+    padding: 5px 10px;
+}
+hr {
+    width: 250px;
+}
+.github {
+    margin-top: 25px;
+}
+.github a {
+    color: rgb(0, 119, 255);
+    text-decoration: underline;
 }

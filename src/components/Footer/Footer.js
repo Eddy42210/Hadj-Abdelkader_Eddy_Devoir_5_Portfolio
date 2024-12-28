@@ -37,12 +37,12 @@ const Footer = ({ handleLinkClick }) => {
         <div className='realisations'>
           <h3 className='title2'>Mes Dernières réalisations</h3>
           <ul className='listes'>
-            <li><Link to="/Portfolio">Fresh Food</Link></li>
-            <li><Link to="/Portfolio">Restaurant Akira</Link></li>
-            <li><Link to="/Portfolio">Espace bien-être</Link></li>
-            <li><Link to="/Portfolio">SEO</Link></li>
-            <li><Link to="/Portfolio">Création d'une API</Link></li>
-            <li><Link to="/Portfolio">Maquette d'un site</Link></li>
+            <li><Link to="/Portfolio"onClick={() => handleLinkClick('/Portfolio')}>Fresh Food</Link></li>
+            <li><Link to="/Portfolio"onClick={() => handleLinkClick('/Portfolio')}>Restaurant Akira</Link></li>
+            <li><Link to="/Portfolio"onClick={() => handleLinkClick('/Portfolio')}>Espace bien-être</Link></li>
+            <li><Link to="/Portfolio"onClick={() => handleLinkClick('/Portfolio')}>SEO</Link></li>
+            <li><Link to="/Portfolio"onClick={() => handleLinkClick('/Portfolio')}>Création d'une API</Link></li>
+            <li><Link to="/Portfolio"onClick={() => handleLinkClick('/Portfolio')}>Maquette d'un site</Link></li>
           </ul>
         </div>
       </nav>

@@ -1,10 +1,76 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.css';
-import Portal from '../components/Portal'
-import johnDoe from '../images/john-doe-about.jpg'
+import Modal from 'react-modal';
+import johnDoe from '../images/john-doe-about.jpg';
 import '../App.css';
 import Trait from '../components/Trait';
 
+const HomePage = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [githubData, setGithubData] = useState(null);
+
+    const openModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+    };
+
+    useEffect(() => {
+        const fetchGithubData = async () => {
+            try {
+                const response = await fetch('https://api.github.com/users/github-john-doe');
+                const data = await response.json();
+                setGithubData(data);
+            } catch (error) {
+                console.error('Erreur lors de la récupération des données GitHub:', error);
+            }
+        };
+
+        fetchGithubData();
+    }, []); 
+
+    return (
+        <div>
+            <button className='bouton' onClick={openModal}>En savoir plus</button>
+
+            <Modal isOpen={isModalOpen} onRequestClose={closeModal} className="modal-style">
+                <div className='header-modal'>
+                    <h3>Mon profil Github</h3>
+                    <p onClick={closeModal} className='X'>X</p>
+                </div>
+                <div className='body-modal'>
+                    <div className='anonym'></div>
+                    <div className='github'>
+                        {githubData ? (
+                            <>
+                                <i className="bi bi-person"> 
+                                    <a href={githubData.html_url} target="_blank" rel="noreferrer">John Doe</a>
+                                </i>
+                                <hr />
+                                <i className="bi bi-geo-alt"></i>
+                                <hr />
+                                <i className="bi bi-card-text"> {githubData.bio || 'Aucune bio disponible.'}</i>
+                                <hr />
+                                <i className="bi bi-box"> Repositories : {githubData.public_repos}</i>
+                                <hr />
+                                <i className="bi bi-people"> Followers : {githubData.followers}</i>
+                                <hr />
+                                <i className="bi bi-people"> Following : {githubData.following}</i>
+                            </>
+                        ) : (
+                            <p>Chargement des données...</p>
+                        )}
+                    </div>
+                </div>
+                <div className='footer-modal'>
+                    <button onClick={closeModal} className='fermer'>Fermer</button>
+                </div>
+            </Modal>
+        </div>
+    );
+};
 
 const Home = () => {
     return (
@@ -13,7 +79,7 @@ const Home = () => {
                 <h1 className='title'>Bonjour je suis John Doe</h1>
                 <h2 className='title'>Développeur web full stack</h2>
                 <div> 
-                    <Portal /> 
+                    <HomePage /> 
                 </div>
             </div>
                 <div className='description'>
