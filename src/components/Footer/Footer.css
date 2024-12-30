@@ -1,44 +1,41 @@
 .icon {
-    color: gray;
-    margin: 5px; 
-    font-size: x-large;
-   
+  color: gray;
+  margin: 5px;
+  font-size: x-large;
 }
-  .icon:hover {
-    color: lightgray; 
-  }
+
+.icon:hover {
+  color: lightgray;
+}
 
 .reseaux {
   margin-top: 15px;
 }
 
-.title1 , .title2 {
+.title1, .title2 {
   color: white;
-  text-align: start;
- }
- a {
+}
+
+a {
   text-decoration: none;
   color: white;
- }
+}
 
-.profil , .listes {
-  display: flex;
-  flex-direction: column;
-  
-} 
-.profil {
-  padding-left: 250px;
-  line-height: 25px;
-  text-align: start;
+address, ul {
+  text-align: left;
 }
-.realisations {
-  padding-right: 150px;
+.container li:hover , .container a:hover{
+  font-weight: bold;
 }
-.listes {
-  line-height: 5px;
-  text-align: start;
+
+@media (max-width: 768px) {
+  .profil, .liens, .realisations {
+    padding: 10px 20px;
+  }
 }
-.title2 {
-  padding-left: 50px;
-  
+
+@media (max-width: 576px) {
+  .profil, .liens, .realisations {
+    padding: 10px 10px;
+  }
 }

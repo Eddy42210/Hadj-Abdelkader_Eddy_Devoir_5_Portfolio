@@ -1,0 +1,95 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/bootstrap';
+
+.banner {
+  background-image: url('../images/banner.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 40vh;
+}
+
+.page {
+  text-align: center;
+  margin: 40px auto 20px;
+}
+
+.descriptif {
+  margin-left: 50px;
+}
+
+.cards i {
+  color: $primary;
+  font-size: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  min-height: 450px;
+}
+
+.card:hover {
+  background-color: #efefef;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.card-body p {
+  margin: 0 auto;
+}
+
+.card-title {
+  margin: 20px 0;
+}
+
+.separate3 {
+  width: 25%;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .descriptif {
+      margin-left: 0;
+  }
+
+  .card-body p {
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  .card-title {
+      margin: 20px;
+  }
+
+  .separate3 {
+      width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .descriptif {
+      margin-left: 0;
+  }
+
+  .card-body p {
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  .card-title {
+      margin: 20px;
+  }
+
+  .separate3 {
+      width: 75%;
+  }
+}

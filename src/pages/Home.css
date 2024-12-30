@@ -1,6 +1,6 @@
 main {
     background-color: #fdfdfd;
-} 
+}
 
 .presentation {
     background-image: url('../images/hero-bg.jpg');
@@ -13,136 +13,187 @@ main {
     color: white;
     height: 100vh;
     opacity: 0.8;
-    
 }
+
 .title {
     font-size: 5rem;
+    text-align: center;
 }
 
 .bouton {
-    
-    border-radius : 10px;
-    background-color: red;
+    border-radius: 10px;
+    background-color: #dc3545;
     color: white;
     padding: 10px 20px;
     margin: 20px;
     font-size: larger;
 }
+
 .description {
-    background-color:#ffff;
-    display: flex;
-    justify-content: center;
-    width:80%;
-    margin: 50px 250px ;
-    border: 1px solid none;
+    background-color: #ffff;
+    width: 100%;
+    margin: 50px auto;
     border-radius: 5px;
     box-shadow: 3px 3px 10px #bbbbbb;
     text-align: start;
-    padding-right: 200px;
+    padding: 20px;
 }
-.apropos {
-    width: 50%;
-    margin-left: 100px;
-}
-.competences {
-    width: 50%;
-    margin-left: 50px;
+
+.apropos, .competences {
+    margin-bottom: 30px;
 }
 
 .about {
-    width: 95%;
+    width: 100%;
     margin: 30px 0px 5px 0px;
-    
 }
+
 p {
     margin-top: 30px;
-    padding-right: 50px;
-    
 }
-.apropos h2 {
-    margin: 50px 25px 10px 0px;
-    padding-bottom: 10px;
 
+.competences h3 {
+    margin: 25px 0px;
 }
 
 .progress {
-    width: 120%;
+    width: 100%;
     margin: 15px 0px;
-  
-}
-.competences h2 {
-    margin: 50px 0px 10px 0px;
-    padding-bottom: 10px;
-
 }
 
-.separate {
-    width: 95%;
+.separate, .separate2 {
+    width: 100%;
 }
-.separate2 {
-    margin-bottom: 30px;
-    width: 120%;
-}
+
+/* Styles généraux */
 .modal-style {
-        
-        border: 1px solid #808080;
-        background-color: rgb(22, 22, 22);
-        border-radius: 10px;
-        height: 60%;
-        width: 60%;
-        margin: auto;
-        margin-top: 10%;
-        color: #ffff;
-
+    border: 1px solid #808080;
+    background-color: rgb(22, 22, 22);
+    border-radius: 10px;
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
 }
+
 .header-modal {
     display: flex;
-    padding: 15px 0px 0px 15px;
+    justify-content: space-between;
+    padding: 15px;
     border-bottom: 1px solid #808080;
-    height: 15%;
+    height: auto;
     margin-bottom: 10px;
 }
+
 .X {
-    color:#808080;
+    color: #808080;
     cursor: pointer;
-    font-size:x-large;
-    margin-left: 73%;
-     
+    font-size: x-large;
 }
+
 .body-modal {
-    height: 70%;
+    flex: 1;
     display: flex;
-    gap: 20%;;
+    flex-direction: row;
+    gap: 5%;
+    padding: 15px;
 }
-.anonym{
+
+.anonym {
     background-image: url('../images/anonym.png');
     background-size: cover;
-    height: 90%;
+    background-position: center;
+    height: 100%;
     width: 40%;
-    margin-left: 1%;
-    
+    border-radius: 10px;
+}
 
+.github {
+    flex: 1;
+    margin-top: 25px;
 }
-.footer-modal{
+
+.footer-modal {
     border-top: 1px solid #808080;
-    
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
 }
+
 .fermer {
     color: #ffff;
     background-color: #808080;
     border-radius: 10px;
     font-size: larger;
-    margin-top: 1%;
-    margin-left: 90%;
     padding: 5px 10px;
 }
+
 hr {
     width: 250px;
 }
-.github {
-    margin-top: 25px;
-}
+
 .github a {
-    color: rgb(0, 119, 255);
+    color: #007bff;
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .modal-style {
+        width: 80%;
+        height: auto;
+        margin-top: 15%;
+    }
+    
+    .body-modal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .anonym {
+        width: 80%;
+        height: 200px;
+    }
+
+    .github {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-style {
+        width: 90%;
+        height: auto;
+        margin-top: 20%;
+    }
+    
+    .header-modal {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .body-modal {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .anonym {
+        width: 100%;
+        height: 150px;
+    }
+
+    .footer-modal {
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .github {
+        width: 100%;
+        text-align: center;
+    }
 }

@@ -1,0 +1,17 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/bootstrap';
+
+
+body {
+  background-color: $body-bg;
+  color: $body-color;
+}
+
+.button {
+  background-color: $primary;
+  color: $white;
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
+}

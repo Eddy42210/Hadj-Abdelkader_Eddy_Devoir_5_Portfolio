@@ -1,36 +1,61 @@
-.separate4 {
-    width: 40%;
-    margin: auto;
-}
 .formulaire {
     display: flex;
-    width: 50%;
-}
-form {
-    display: flex;
     flex-direction: column;
-    width: 100%;
     gap: 10px;
-    margin: 20px;
+    margin: 30px;
     text-align: start;
 }
+
 .contactez-moi {
-    background-color:#ffff;
+    background-color: #fff;
     display: flex;
-    width:70%;
-    margin: 50px 250px ;
+    width: 100%;
+    margin: 50px 0;
     border: 1px solid none;
     border-radius: 5px;
     box-shadow: 3px 3px 10px #bbbbbb;
-
 }
-input , textarea {
+
+input, textarea {
     border: 1px solid #e0e0e0;
     border-radius: 5px;
 }
+
 .coordonees {
-        display: flex;
-        flex-direction: column; 
-         padding: 30px;
-         text-align: start;
+    padding: 30px;
+    text-align: start;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+}
+
+.contact-info i {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.btn-sm {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.trait-wrapper {
+    margin-bottom: 20px;
+}
+
+.trait-bleu {
+    border: none;
+    border-top: 3px solid #007bff;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
